@@ -1,10 +1,26 @@
+import styled from "styled-components";
+import Subtitle from "../atoms/Subtitle";
+
+const StyledAboutMe = styled.section`
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
+`;
+
 function AboutMe() {
   return (
-    <section class="about-me" id="about">
+    <StyledAboutMe id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">
-        Software Engineer
-      </p>
+      <Subtitle type="about">Software Engineer</Subtitle>
 
       <div class="about-me__body">
         <p>
@@ -21,7 +37,7 @@ function AboutMe() {
       </div>
 
       <img src="./img/me.jpeg" alt="Anthony Smiling" class="about-me__img" />
-    </section>
+    </StyledAboutMe>
   );
 }
 

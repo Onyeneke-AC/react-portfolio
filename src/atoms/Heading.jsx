@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 const Heading = styled.h1`
   line-height: 1;
-  margin: 0;
+  margin: 0 0 0.25em 0;
 
   ${(props) =>
     props.as === "intro" &&
@@ -15,7 +15,6 @@ const Heading = styled.h1`
     css`
       color: var(--clr-accent);
       position: relative;
-      margin-bottom: 0.25em;
       font-size: var(--fs-h2);
 
       &::after {
@@ -33,7 +32,7 @@ const Heading = styled.h1`
     css`
       font-size: var(--fs-h3);
       margin-bottom: 10px;
-    `}
+    `};
   ${(props) =>
     props.type === "light" &&
     css`
@@ -45,6 +44,14 @@ const Heading = styled.h1`
 
   & strong {
     display: block;
+  }
+
+  @media (min-width: 600px) {
+    ${(props) =>
+      props.as === "about" &&
+      css`
+        grid-area: title;
+      `}
   }
 `;
 

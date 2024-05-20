@@ -1,28 +1,9 @@
 import styled from "styled-components";
 import Heading from "../atoms/Heading";
+import Subtitle from "../atoms/Subtitle";
 
 const StyledIntroduction = styled.section`
   position: relative;
-
-  & p {
-    margin: 0;
-    font-size: var(--fs-h3);
-    background: var(--clr-accent);
-    font-family: var(--ff-secondary);
-    padding: 0.25em 1em;
-    margin-bottom: 1em;
-    display: inline-block;
-
-    @media (min-width: 600px) {
-      align-self: start;
-      grid-column: -1/1;
-      grid-row: 2;
-      text-align: right;
-      position: relative;
-      left: -1.5rem;
-      width: calc(100% + 1em);
-    }
-  }
 
   @media (min-width: 600px) {
     display: grid;
@@ -53,7 +34,7 @@ function Introduction() {
       <Heading as="intro">
         Hi, I am <strong>Onyeneke Anthony</strong>
       </Heading>
-      <p>Front-end Developer</p>
+      <Subtitle type="intro">Front-end Developer</Subtitle>
       <IntroImage src="./img/me.jpeg" alt="Anthony smiling" />
     </StyledIntroduction>
   );
