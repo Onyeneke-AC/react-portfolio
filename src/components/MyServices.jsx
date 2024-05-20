@@ -20,6 +20,11 @@ const Services = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+
+  & div {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 `;
 
 function MyServices() {
@@ -29,24 +34,24 @@ function MyServices() {
         <strong>What I do</strong>
       </Heading>
       <Services>
-        <div class="service">
-          <h3>Consultation</h3>
+        <div>
+          <Heading as="h3">Consultation</Heading>
           <p>
             I offer consultation on the best way to go about setting up your
             software prototype.
           </p>
         </div>
 
-        <div class="service">
-          <h3>Website Execution</h3>
+        <div>
+          <Heading as="h3">Website Execution</Heading>
           <p>
             As a fullstack developer, I carry out the execution of both the
             front end and back end development of website packages.
           </p>
         </div>
 
-        <div class="service">
-          <h3>Deployment</h3>
+        <div>
+          <Heading as="h3">Deployment</Heading>
           <p>
             I also offer the best cloud computing solution that will aid the
             deployment of your software.

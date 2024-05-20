@@ -29,6 +29,12 @@ const Heading = styled.h1`
       }
     `};
   ${(props) =>
+    props.as === "h3" &&
+    css`
+      font-size: var(--fs-h3);
+      margin-bottom: 10px;
+    `}
+  ${(props) =>
     props.type === "light" &&
     css`
       margin: 0;
