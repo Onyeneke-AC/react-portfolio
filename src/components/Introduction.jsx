@@ -49,7 +49,7 @@ const IntroImage = styled.img`
 
 function Introduction() {
   return (
-    <StyledIntroduction class="intro" id="home">
+    <StyledIntroduction id="home">
       <Heading as="intro">
         Hi, I am <strong>Onyeneke Anthony</strong>
       </Heading>

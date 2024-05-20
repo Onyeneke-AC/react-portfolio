@@ -1,9 +1,22 @@
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+import Heading from "../atoms/Heading";
+
+const StyledMyServices = styled.section`
+  background-color: var(--clr-dark);
+  background-image: url(/img/bgrnd_srv.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+  text-align: center;
+`;
 
 function MyServices() {
   return (
-    <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">What I do</h2>
+    <StyledMyServices id="services">
+      <Heading as="services">
+        <strong>What I do</strong>
+      </Heading>
       <div class="services">
         <div class="service">
           <h3>Consultation</h3>
@@ -32,7 +45,7 @@ function MyServices() {
       <Link to="#work" class="btn">
         My Work
       </Link>
-    </section>
+    </StyledMyServices>
   );
 }
 
