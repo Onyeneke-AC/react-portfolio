@@ -42,17 +42,17 @@ function Footer() {
         <span>Email me at: </span>onyeneke.acs@gmail.com
       </p>
       <FooterList>
-        <li class="social-list__item">
+        <li>
           <FooterLink to="https://github.com/Onyeneke-AC">
             <FaGithub />
           </FooterLink>
         </li>
-        <li class="social-list__item">
+        <li>
           <FooterLink to="www.linkedin.com/in/anthony-onyeneke">
             <FaLinkedin />
           </FooterLink>
         </li>
-        <li class="social-list__item">
+        <li>
           <FooterLink to="anthonykhidblakeo@gmail.com">
             <FaTwitter />
           </FooterLink>
