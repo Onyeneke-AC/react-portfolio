@@ -11,13 +11,24 @@ const StyledMyServices = styled.section`
   text-align: center;
 `;
 
+const Services = styled.div`
+  margin-bottom: 4em;
+
+  @media (min-width: 800px) {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+`;
+
 function MyServices() {
   return (
     <StyledMyServices id="services">
       <Heading as="services">
         <strong>What I do</strong>
       </Heading>
-      <div class="services">
+      <Services>
         <div class="service">
           <h3>Consultation</h3>
           <p>
@@ -41,7 +52,7 @@ function MyServices() {
             deployment of your software.
           </p>
         </div>
-      </div>
+      </Services>
       <Link to="#work" class="btn">
         My Work
       </Link>
