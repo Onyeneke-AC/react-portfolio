@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Heading from "../atoms/Heading";
+// import ButtonLink from "../atoms/Button";
 
 const StyledMyServices = styled.section`
   background-color: var(--clr-dark);
@@ -23,7 +23,7 @@ const Services = styled.div`
 
   & div {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 `;
 
@@ -58,9 +58,7 @@ function MyServices() {
           </p>
         </div>
       </Services>
-      <Link to="#work" class="btn">
-        My Work
-      </Link>
+      {/* <ButtonLink to="work">My Work</ButtonLink> */}
     </StyledMyServices>
   );
 }
