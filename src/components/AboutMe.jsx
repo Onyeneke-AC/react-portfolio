@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Subtitle from "../atoms/Subtitle";
+import Heading from "../atoms/Heading";
 
 const StyledAboutMe = styled.section`
   max-width: 1000px;
@@ -14,15 +15,29 @@ const StyledAboutMe = styled.section`
       "text img";
     grid-column-gap: 2em;
   }
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+`;
+
+const AboutImage = styled.img`
+  grid-area: img;
+  position: relative;
+  z-index: 2;
 `;
 
 function AboutMe() {
   return (
     <StyledAboutMe id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
+      <Heading as="intro">
+        <strong>Who I am</strong>
+      </Heading>
       <Subtitle type="about">Software Engineer</Subtitle>
 
-      <div class="about-me__body">
+      <div>
         <p>
           I am an aspiring software engineer who takes his time to work on his
           foundations before embracing any technology.
@@ -36,7 +51,7 @@ function AboutMe() {
         </p>
       </div>
 
-      <img src="./img/me.jpeg" alt="Anthony Smiling" class="about-me__img" />
+      <AboutImage src="./img/me.jpeg" alt="Anthony Smiling" />
     </StyledAboutMe>
   );
 }

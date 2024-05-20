@@ -11,7 +11,6 @@ const Subtitle = styled.p`
   @media (min-width: 600px) {
     grid-column: -1/1;
     grid-row: 2;
-    text-align: right;
     position: relative;
   }
 
@@ -21,6 +20,7 @@ const Subtitle = styled.p`
       display: inline-block;
 
       @media (min-width: 600px) {
+        text-align: right;
         align-self: start;
         left: -1.5rem;
         width: calc(100% + 1em);
@@ -34,6 +34,7 @@ const Subtitle = styled.p`
       @media (min-width: 600px) {
         left: -1em;
         width: calc(100% + 2em);
+        padding-right: calc(200px + 4em);
         padding-left: 1em;
       }
     `}

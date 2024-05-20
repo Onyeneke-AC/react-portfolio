@@ -9,6 +9,7 @@ const Heading = styled.h1`
     css`
       font-weight: var(--fs-h3);
       font-size: var(--fs-h1);
+      grid-area: title;
     `};
   ${(props) =>
     props.as === "services" &&
@@ -44,14 +45,6 @@ const Heading = styled.h1`
 
   & strong {
     display: block;
-  }
-
-  @media (min-width: 600px) {
-    ${(props) =>
-      props.as === "about" &&
-      css`
-        grid-area: title;
-      `}
   }
 `;
 
