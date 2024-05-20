@@ -1,38 +1,64 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const StyledFooter = styled.footer`
+  background: #111;
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 1.5em 0;
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+
+  & span {
+    color: var(--clr-light);
+    font-weight: var(--fw-reg);
+    font-size: 20px;
+    display: block;
+  }
+`;
+
+const FooterList = styled.ul`
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0 0;
+  padding: 0;
+  gap: 50px;
+`;
+
+const FooterLink = styled(Link)`
+  color: var(--clr-accent);
+
+  &:hover {
+    color: var(--clr-light);
+  }
+`;
 
 function Footer() {
   return (
-    <footer class="footer">
-      <Link to="onyeneke.acs@gmail.com" class="footer__link">
-        onyeneke.acs@gmail.com
-      </Link>
-      <ul class="social-list">
+    <StyledFooter>
+      <p>
+        <span>Email me at: </span>onyeneke.acs@gmail.com
+      </p>
+      <FooterList>
         <li class="social-list__item">
-          <Link to="https://github.com/Onyeneke-AC" class="social-list__link">
+          <FooterLink to="https://github.com/Onyeneke-AC">
             <FaGithub />
-          </Link>
+          </FooterLink>
         </li>
         <li class="social-list__item">
-          <Link
-            to="www.linkedin.com/in/anthony-onyeneke"
-            class="social-list__link"
-          >
+          <FooterLink to="www.linkedin.com/in/anthony-onyeneke">
             <FaLinkedin />
-          </Link>
+          </FooterLink>
         </li>
         <li class="social-list__item">
-          <Link to="anthonykhidblakeo@gmail.com" class="social-list__link">
+          <FooterLink to="anthonykhidblakeo@gmail.com">
             <FaTwitter />
-          </Link>
+          </FooterLink>
         </li>
-        <li class="social-list__item">
-          <Link to="anthonykhidblakeo@gmail.com" class="social-list__link">
-            <FaWhatsapp />
-          </Link>
-        </li>
-      </ul>
-    </footer>
+      </FooterList>
+    </StyledFooter>
   );
 }
 
