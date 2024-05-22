@@ -40,7 +40,6 @@ const Heading = styled.h1`
       margin: 0;
       background-color: var(--clr-accent);
       padding: 0.25em 1em;
-      margin-bottom: 1em;
     `}
 
   & strong {
