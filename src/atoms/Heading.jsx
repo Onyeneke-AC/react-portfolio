@@ -34,7 +34,6 @@ const Heading = styled.h1`
       font-size: var(--fs-h3);
       margin-bottom: 10px;
     `};
-  ${(props) => props.type === "light"}
 
   & strong {
     display: block;
