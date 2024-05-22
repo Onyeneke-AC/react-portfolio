@@ -38,7 +38,6 @@ const Heading = styled.h1`
     props.type === "light" &&
     css`
       margin: 0;
-      background-color: var(--clr-accent);
     `}
 
   & strong {
