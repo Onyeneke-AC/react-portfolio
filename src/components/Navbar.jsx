@@ -1,9 +1,15 @@
-import { Link } from "react-router-dom";
+import styled from "styled-components";
 import MainNav from "./MainNav";
+
+const StyledHeader = styled.header`
+  display: flex;
+  font-weight: var(--fw-bold);
+  margin-bottom: 2em;
+`;
 
 function Navbar() {
   return (
-    <header>
+    <StyledHeader>
       <div class="logo">
         <img src="./img/my_logo.png" alt="" />
       </div>
@@ -11,7 +17,7 @@ function Navbar() {
         <span class="hamburger"></span>
       </button>
       <MainNav />
-    </header>
+    </StyledHeader>
   );
 }
 
