@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
@@ -12,6 +12,11 @@ const StyledList = styled.ul`
   gap: 50px;
   align-items: center;
   list-style: none;
+`;
+
+const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
+  color: var(--clr-light);
 `;
 
 function MainNav() {
@@ -32,24 +37,16 @@ function MainNav() {
     <StyledNav>
       <StyledList>
         <li class="nav__item">
-          <Link to="#home" class="nav__link">
-            Home
-          </Link>
+          <StyledNavLink to="#home">Home</StyledNavLink>
         </li>
         <li class="nav__item">
-          <Link to="#services" class="nav__link">
-            My Services
-          </Link>
+          <StyledNavLink to="#services">Services</StyledNavLink>
         </li>
         <li class="nav__item">
-          <Link to="#about" class="nav__link">
-            About Me
-          </Link>
+          <StyledNavLink to="#about">About Me</StyledNavLink>
         </li>
         <li class="nav__item">
-          <Link to="#work" class="nav__link">
-            My Work
-          </Link>
+          <StyledNavLink to="#work">My Work</StyledNavLink>
         </li>
       </StyledList>
     </StyledNav>

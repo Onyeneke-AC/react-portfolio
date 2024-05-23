@@ -5,7 +5,7 @@ import Heading from "../atoms/Heading";
 const StyledAboutMe = styled.section`
   max-width: 1000px;
   margin: 0 auto;
-  padding: 7em 5em;
+  padding: 10em 5em;
 
   @media (min-width: 600px) {
     display: grid;

@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
   position: sticky;
   top: 0;
   gap: 500px;
-  background-color: #000;
+  background-color: var(--clr-dark);
   z-index: 1000;
 `;
 
