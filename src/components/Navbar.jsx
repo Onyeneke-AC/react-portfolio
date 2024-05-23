@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import MainNav from "./MainNav";
+import Logo from "./Logo";
 
 const StyledHeader = styled.header`
   display: flex;
@@ -10,9 +11,7 @@ const StyledHeader = styled.header`
 function Navbar() {
   return (
     <StyledHeader>
-      <div class="logo">
-        <img src="./img/my_logo.png" alt="" />
-      </div>
+      <Logo />
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
       </button>
