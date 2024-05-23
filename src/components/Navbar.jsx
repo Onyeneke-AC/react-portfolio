@@ -8,12 +8,11 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   font-weight: var(--fw-bold);
-  margin-bottom: 5em;
   padding: 10px 50px;
   position: sticky;
   top: 0;
   gap: 500px;
-  background-color: var(--clr-dark);
+  background-color: #000;
   z-index: 1000;
 `;
 

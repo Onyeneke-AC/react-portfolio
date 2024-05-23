@@ -52,9 +52,9 @@ body {
   line-height: 1.6;
 }
 
-section {
-  padding: 7em 2em 9em;
-}
+/* section {
+  padding: 10em 2em;
+} */
 
 :focus {
   outline: 3px solid var(--clr-accent);
