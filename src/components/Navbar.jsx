@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import MainNav from "./MainNav";
 
 function Navbar() {
   return (
@@ -9,30 +10,7 @@ function Navbar() {
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
       </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <Link to="#home" class="nav__link">
-              Home
-            </Link>
-          </li>
-          <li class="nav__item">
-            <Link to="#services" class="nav__link">
-              My Services
-            </Link>
-          </li>
-          <li class="nav__item">
-            <Link to="#about" class="nav__link">
-              About Me
-            </Link>
-          </li>
-          <li class="nav__item">
-            <Link to="#work" class="nav__link">
-              My Work
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <MainNav />
     </header>
   );
 }
