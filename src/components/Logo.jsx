@@ -4,10 +4,14 @@ const StyledLogo = styled.div`
   max-width: 150px;
 `;
 
+const LogoImage = styled.img`
+  background-color: var(--clr-light);
+`;
+
 function Logo() {
   return (
     <StyledLogo>
-      <img src="./img/my_logo.png" alt="" />
+      <LogoImage src="./img/my_logo.png" alt="" />
     </StyledLogo>
   );
 }

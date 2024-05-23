@@ -5,10 +5,16 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const StyledHeader = styled.header`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-weight: var(--fw-bold);
-  margin-bottom: 2em;
+  margin-bottom: 5em;
+  padding: 10px 50px;
   position: sticky;
   top: 0;
+  gap: 500px;
+  background-color: var(--clr-dark);
+  z-index: 1000;
 `;
 
 function Navbar() {

@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import Heading from "../atoms/Heading";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import ButtonLink from "../atoms/Button";
 
 const StyledMyServices = styled.section`
@@ -30,19 +28,6 @@ const Services = styled.div`
 `;
 
 function MyServices() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      let elem = document.getElementById(location.hash.slice(1));
-      if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    }
-  }, [location]);
-
   return (
     <StyledMyServices id="services">
       <Heading as="services">
