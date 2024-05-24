@@ -9,7 +9,11 @@ const StyledMyServices = styled.section`
   background-blend-mode: multiply;
   color: var(--clr-light);
   text-align: center;
-  padding: 10em 5em;
+  padding: 7em 5em;
+
+  @media (min-width: 600px) {
+    padding: 10em 5em;
+  }
 `;
 
 const Services = styled.div`
