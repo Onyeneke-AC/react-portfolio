@@ -36,16 +36,16 @@ function MainNav() {
   return (
     <StyledNav>
       <StyledList>
-        <li class="nav__item">
+        <li>
           <StyledNavLink to="#home">Home</StyledNavLink>
         </li>
-        <li class="nav__item">
+        <li>
           <StyledNavLink to="#services">Services</StyledNavLink>
         </li>
-        <li class="nav__item">
+        <li>
           <StyledNavLink to="#about">About Me</StyledNavLink>
         </li>
-        <li class="nav__item">
+        <li>
           <StyledNavLink to="#work">My Work</StyledNavLink>
         </li>
       </StyledList>

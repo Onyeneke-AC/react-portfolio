@@ -5,6 +5,7 @@ import Subtitle from "../atoms/Subtitle";
 const StyledIntroduction = styled.section`
   position: relative;
   padding: 7em 5em;
+  object-fit: cover;
 
   @media (min-width: 600px) {
     display: grid;

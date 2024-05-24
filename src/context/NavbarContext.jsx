@@ -18,7 +18,7 @@ function WindowWidthProvider({ children }) {
   }, []);
 
   return (
-    <WindowWidthContext.Provider value={{ width }}>
+    <WindowWidthContext.Provider value={{ width, setWidth }}>
       {children}
     </WindowWidthContext.Provider>
   );
