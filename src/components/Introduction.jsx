@@ -33,7 +33,7 @@ const IntroImage = styled.img`
 
 function Introduction() {
   return (
-    <StyledIntroduction id="home">
+    <StyledIntroduction id="Home">
       <Heading as="intro">
         Hi, I am <strong>Onyeneke Anthony</strong>
       </Heading>

@@ -13,8 +13,8 @@ function App() {
           <Route element={<AppLayout />}>
             <Route index element={<Navigate replace to="home" />} />
             <Route path="home" element={<Home />} />
-            <Route path="project/:projectId" element={<Project />} />
           </Route>
+          <Route path="project/:projectId" element={<Project />} />
         </Routes>
       </BrowserRouter>
     </WindowWidthProvider>

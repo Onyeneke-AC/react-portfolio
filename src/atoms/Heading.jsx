@@ -35,6 +35,24 @@ const Heading = styled.h1`
       margin-bottom: 10px;
     `};
 
+  ${(props) =>
+    props.as === "work" &&
+    css`
+      font-size: var(--fs-h2);
+      color: var(--clr-light);
+      font-weight: var(--fw-bold);
+
+      &::after {
+        content: "";
+        display: block;
+        width: 2em;
+        height: 1px;
+        margin: 0.5em auto 0.5em;
+        background: var(--clr-light);
+        opacity: 0.25;
+      }
+    `}
+
   & strong {
     display: block;
   }

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import MainNav from "./MainNav";
 import Logo from "./Logo";
-import { useWindowWidth } from "../context/NavbarContext";
 import Sidebar from "./Sidebar";
 import { useEffect, useState } from "react";
 
@@ -26,12 +25,10 @@ function Navbar() {
       setWidth(window.innerWidth);
     };
 
-    console.log(width);
-
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [width]);
 
   return (
     <StyledHeader>

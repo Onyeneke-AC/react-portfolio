@@ -33,7 +33,7 @@ const AboutImage = styled.img`
 
 function AboutMe() {
   return (
-    <StyledAboutMe id="about">
+    <StyledAboutMe id="About">
       <Heading as="intro">
         <strong>Who I am</strong>
       </Heading>

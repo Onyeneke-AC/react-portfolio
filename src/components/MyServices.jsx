@@ -34,7 +34,7 @@ const Services = styled.div`
 
 function MyServices() {
   return (
-    <StyledMyServices id="services">
+    <StyledMyServices id="Services">
       <Heading as="services">
         <strong>What I do</strong>
       </Heading>
@@ -63,7 +63,7 @@ function MyServices() {
           </p>
         </div>
       </Services>
-      <ButtonLink to="#work">My Work</ButtonLink>
+      <ButtonLink to="#Work">My Work</ButtonLink>
     </StyledMyServices>
   );
 }

@@ -1,79 +1,57 @@
 import { Link } from "react-router-dom";
+import { portfolioData } from "../assets/data";
+import Work from "./Work";
+import styled from "styled-components";
+import Heading from "../atoms/Heading";
+
+const WorkSection = styled.section`
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+  padding: 50px 0;
+`;
+
+const WorkSubtitle = styled.p`
+  color: var(--clr-accent);
+  /* font-weight: var(--fw-bold); */
+  font-family: var(--ff-primary);
+  margin-top: 10px;
+  line-height: 1rem;
+  font-size: 20px;
+`;
+
+const Portfolio = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  padding: 50px;
+`;
+
+const PortfolioItem = styled(Link)`
+  background: var(--clr-accent);
+  overflow: hidden;
+
+  &:focus {
+    position: relative;
+    z-index: 2;
+  }
+`;
 
 function MyWork() {
   return (
-    <section class="my-work" id="work">
-      <h2 class="section__title section__title--work">My Work</h2>
-      <p class="section__subtitle section__subtitle--work">
-        Experience in the engineering industries with a plan of introducing
-        technology into this field.
-      </p>
-      <div class="portfolio">
-        <Link to="portfolio-item.html" class="portfolio__item">
-          <img
-            src="./img/dialux_300x300.jpeg"
-            alt="Lighting Design"
-            class="portfolio__img"
-          />
-        </Link>
-
-        <Link to="#" class="portfolio__item">
-          <img
-            src="./img/html_300x300.png"
-            alt="Javascript"
-            class="portfolio__img"
-          />
-        </Link>
-
-        <Link to="#" class="portfolio__item">
-          <img src="./img/html_300x300.png" alt="css" class="portfolio__img" />
-        </Link>
-
-        <Link to="#" class="portfolio__item">
-          <img
-            src="./img/pipe_300x300.png"
-            alt="P & ID"
-            class="portfolio__img"
-          />
-        </Link>
-
-        <Link to="#" class="portfolio__item">
-          <img
-            src="./img/microsoft_pack_1_300x300.png"
-            alt="microsoft packages"
-            class="portfolio__img"
-          />
-        </Link>
-
-        <Link to="#" class="portfolio__item">
-          <img src="./img/html_300x300.png" alt="html" class="portfolio__img" />
-        </Link>
-
-        <Link to="#" class="portfolio__item">
-          <img
-            src="./img/git_300x300.jpeg"
-            alt="Git & Github"
-            class="portfolio__img"
-          />
-        </Link>
-
-        <Link to="#" class="portfolio__item">
-          <img
-            src="./img/emb_300x300.png"
-            alt="Embedded Systems"
-            class="portfolio__img"
-          />
-        </Link>
-
-        <Link to="#" class="portfolio__item">
-          <img
-            src="./img/elect_300x300.jpeg"
-            alt="Electrical Instrumentation"
-            class="portfolio__img"
-          />
-        </Link>
-      </div>
-    </section>
+    <WorkSection id="Work">
+      <Heading as="work">My Work</Heading>
+      <WorkSubtitle>
+        Over one year experience working with front-end technologies.
+      </WorkSubtitle>
+      <Portfolio>
+        {portfolioData.map((work) => (
+          <PortfolioItem to={`/project/${work.id}`} key={work.id}>
+            <Work work={work} key={work.id} />
+          </PortfolioItem>
+        ))}
+      </Portfolio>
+    </WorkSection>
   );
 }
 

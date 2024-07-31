@@ -17,6 +17,11 @@ const StyledList = styled.ul`
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: var(--clr-light);
+
+  &:hover {
+    color: var(--clr-accent);
+    text-decoration: underline;
+  }
 `;
 
 function MainNav() {
@@ -37,16 +42,16 @@ function MainNav() {
     <StyledNav>
       <StyledList>
         <li>
-          <StyledNavLink to="#home">Home</StyledNavLink>
+          <StyledNavLink to="#Home">Home</StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="#services">Services</StyledNavLink>
+          <StyledNavLink to="#Services">Services</StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="#about">About Me</StyledNavLink>
+          <StyledNavLink to="#About">About Me</StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="#work">My Work</StyledNavLink>
+          <StyledNavLink to="#Work">My Work</StyledNavLink>
         </li>
       </StyledList>
     </StyledNav>
