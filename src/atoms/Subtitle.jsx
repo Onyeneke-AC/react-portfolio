@@ -15,7 +15,7 @@ const Subtitle = styled.p`
   }
 
   ${(props) =>
-    props.type === "intro" &&
+    props.type === "intro-sub" &&
     css`
       display: inline-block;
 
@@ -28,7 +28,7 @@ const Subtitle = styled.p`
     `}
 
   ${(props) =>
-    props.type === "about" &&
+    props.type === "about-me" &&
     css`
       grid-area: subtitle;
       @media (min-width: 600px) {

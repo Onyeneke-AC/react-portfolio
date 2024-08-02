@@ -103,6 +103,30 @@ const BackLink = styled.button`
   }
 `;
 
+const Desc = styled.span`
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.1rem;
+`;
+
+const ProjectLink = styled(Link)`
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--clr-dark);
+
+  &:hover {
+    color: var(--clr-accent);
+    text-decoration: none;
+  }
+`;
+
+const NamePassword = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+`;
+
 function ProjectDetails() {
   const navigate = useNavigate();
   const { projectId } = useParams();
@@ -122,10 +146,10 @@ function ProjectDetails() {
         Back to Home
       </BackLink>
       <Intro>
-        <Heading as="intro">
+        <Heading as="intro-heading">
           <strong>{project.title}</strong>
         </Heading>
-        <Subtitle type="intro">{project.subtitle}</Subtitle>
+        <Subtitle type="intro-sub">{project.subtitle}</Subtitle>
         <ProjectImg>
           <img src={`/${project.mainImg}`} alt={project.title} />
         </ProjectImg>
@@ -139,20 +163,40 @@ function ProjectDetails() {
           <img src={`/${project.subImg}`} alt={project.title} />
         </ProjectSubImg>
 
-        <p>{project.description}</p>
+        <p>
+          <Desc>{project.description}</Desc>
+        </p>
+        {project?.username && project?.password && (
+          <NamePassword>
+            <p>
+              <Desc>
+                <strong>Project Username:</strong> {project.username}
+              </Desc>
+            </p>
+            <p>
+              <Desc>
+                <strong>Project Password:</strong> {project.password}
+              </Desc>
+            </p>
+          </NamePassword>
+        )}
         <StyledLinks>
           <div>
-            Click{" "}
-            <Link to={project.demo} target="__blank">
-              {project.title}
-            </Link>{" "}
-            to view the project
+            <strong>
+              Click{" "}
+              <ProjectLink to={project.demo} target="__blank">
+                {project.title}
+              </ProjectLink>{" "}
+              to view the project
+            </strong>
           </div>
           <div>
-            Github:{" "}
-            <Link to={project.github} target="__blank">
-              Github
-            </Link>
+            <strong>
+              Github Repository:{" "}
+              <ProjectLink to={project.github} target="__blank">
+                Github
+              </ProjectLink>
+            </strong>
           </div>
         </StyledLinks>
       </StyledPortfolioItem>

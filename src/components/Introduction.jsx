@@ -34,10 +34,10 @@ const IntroImage = styled.img`
 function Introduction() {
   return (
     <StyledIntroduction id="Home">
-      <Heading as="intro">
+      <Heading as="intro-heading">
         Hi, I am <strong>Onyeneke Anthony</strong>
       </Heading>
-      <Subtitle type="intro">Front-end Developer</Subtitle>
+      <Subtitle type="intro-sub">Front-end Developer</Subtitle>
       <IntroImage src="./img/me.jpeg" alt="Anthony smiling" />
     </StyledIntroduction>
   );

@@ -14,7 +14,7 @@ const WorkSection = styled.section`
 const WorkSubtitle = styled.p`
   color: var(--clr-accent);
   /* font-weight: var(--fw-bold); */
-  font-family: var(--ff-primary);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-top: 10px;
   line-height: 1rem;
   font-size: 20px;
@@ -40,14 +40,14 @@ const PortfolioItem = styled(Link)`
 function MyWork() {
   return (
     <WorkSection id="Work">
-      <Heading as="work">My Work</Heading>
+      <Heading as="my-work">My Work</Heading>
       <WorkSubtitle>
         Over one year experience working with front-end technologies.
       </WorkSubtitle>
       <Portfolio>
         {portfolioData.map((work) => (
           <PortfolioItem to={`/project/${work.id}`} key={work.id}>
-            <Work work={work} key={work.id} />
+            <Work work={work} />
           </PortfolioItem>
         ))}
       </Portfolio>

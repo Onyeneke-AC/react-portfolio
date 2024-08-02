@@ -5,14 +5,14 @@ const Heading = styled.h1`
   margin: 0 0 0.25em 0;
 
   ${(props) =>
-    props.as === "intro" &&
+    props.as === "intro-heading" &&
     css`
       font-weight: var(--fs-h3);
       font-size: var(--fs-h1);
       grid-area: title;
     `};
   ${(props) =>
-    props.as === "services" &&
+    props.as === "service-heading" &&
     css`
       color: var(--clr-accent);
       position: relative;
@@ -33,10 +33,11 @@ const Heading = styled.h1`
     css`
       font-size: var(--fs-h3);
       margin-bottom: 10px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     `};
 
   ${(props) =>
-    props.as === "work" &&
+    props.as === "my-work" &&
     css`
       font-size: var(--fs-h2);
       color: var(--clr-light);

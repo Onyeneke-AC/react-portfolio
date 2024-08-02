@@ -10,6 +10,8 @@ export const portfolioData = [
     subImg: "img/2-wild-oasis.JPG",
     demo: "https://the-wild-oasis-sand-two.vercel.app/",
     github: "https://github.com/Onyeneke-AC/the-wild-oasis",
+    username: "anthony@example.com",
+    password: "12345678",
   },
   {
     id: 2,

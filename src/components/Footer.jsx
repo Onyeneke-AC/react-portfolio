@@ -11,8 +11,9 @@ const StyledFooter = styled.footer`
   font-weight: var(--fw-reg);
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-direction: column;
   align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 
   & span {
     color: var(--clr-light);
@@ -23,6 +24,8 @@ const StyledFooter = styled.footer`
 
   @media screen and (min-width: 520px) {
     justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
   }
 `;
 
@@ -62,7 +65,7 @@ function Footer() {
           </FooterLink>
         </li>
         <li>
-          <FooterLink to="anthonykhidblakeo@gmail.com" target="__blank">
+          <FooterLink to="https://x.com/anthony_egotech" target="__blank">
             <FaTwitter />
           </FooterLink>
         </li>

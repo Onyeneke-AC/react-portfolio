@@ -12,12 +12,12 @@ const StyledMyServices = styled.section`
   padding: 7em 5em;
 
   @media (min-width: 600px) {
-    padding: 10em 5em;
+    padding: 7em 5em 5em;
   }
 `;
 
 const Services = styled.div`
-  margin-bottom: 4em;
+  margin-bottom: 3em;
 
   @media (min-width: 800px) {
     display: flex;
@@ -25,43 +25,59 @@ const Services = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+`;
 
-  & div {
-    max-width: 500px;
-    margin: 0 auto 20px;
+const Service = styled.div`
+  max-width: 500px;
+  margin: 0 auto 20px;
+  padding: 15px;
+  /* border: 1px solid red; */
+
+  & p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding-top: 10px;
   }
 `;
 
 function MyServices() {
   return (
     <StyledMyServices id="Services">
-      <Heading as="services">
+      <Heading as="service-heading">
         <strong>What I do</strong>
       </Heading>
       <Services>
-        <div>
-          <Heading as="h3">Consultation</Heading>
+        <Service>
+          <Heading as="h3">Website Development and Design</Heading>
           <p>
-            I offer consultation on the best way to go about setting up your
-            software prototype.
+            Create custom websites for clients, focusing on user-friendly
+            interfaces, responsive design, and optimal performance. Use React to
+            build visually appealing and functional websites. Collaborate with
+            clients to understand their needs, brand identity, and target
+            audience.
           </p>
-        </div>
+        </Service>
 
-        <div>
-          <Heading as="h3">Website Execution</Heading>
+        <Service>
+          <Heading as="h3">Front-End Optimization</Heading>
           <p>
-            As a fullstack developer, I carry out the execution of both the
-            front end and back end development of website packages.
+            Optimize existing websites by improving page load times, enhancing
+            user experience, and ensuring compatibility across browsers and
+            devices. Implement performance best practices, minify assets, and
+            optimize images. Conduct audits to identify bottlenecks and
+            recommend improvements.
           </p>
-        </div>
+        </Service>
 
-        <div>
-          <Heading as="h3">Deployment</Heading>
+        <Service>
+          <Heading as="h3">Component Libraries and UI Kits</Heading>
           <p>
-            I also offer the best cloud computing solution that will aid the
-            deployment of your software.
+            Develop reusable UI components, libraries, or kits that other
+            developers can use to build consistent and efficient user
+            interfaces. Create well-documented components (e.g., buttons, forms,
+            modals) using React. Publish them on platforms like GitHub.
           </p>
-        </div>
+        </Service>
       </Services>
       <ButtonLink to="#Work">My Work</ButtonLink>
     </StyledMyServices>
