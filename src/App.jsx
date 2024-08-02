@@ -3,21 +3,18 @@ import AppLayout from "./components/AppLayout";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import "./index.css";
-import { WindowWidthProvider } from "./context/NavbarContext";
 
 function App() {
   return (
-    <WindowWidthProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route element={<AppLayout />}>
-            <Route index element={<Navigate replace to="home" />} />
-            <Route path="home" element={<Home />} />
-          </Route>
-          <Route path="project/:projectId" element={<Project />} />
-        </Routes>
-      </BrowserRouter>
-    </WindowWidthProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<AppLayout />}>
+          <Route index element={<Navigate replace to="home" />} />
+          <Route path="home" element={<Home />} />
+        </Route>
+        <Route path="project/:projectId" element={<Project />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
