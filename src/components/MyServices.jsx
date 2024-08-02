@@ -31,7 +31,6 @@ const Service = styled.div`
   max-width: 500px;
   margin: 0 auto 20px;
   padding: 15px;
-  /* border: 1px solid red; */
 
   & p {
     font-family: Arial, Helvetica, sans-serif;

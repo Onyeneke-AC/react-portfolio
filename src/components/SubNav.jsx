@@ -30,7 +30,6 @@ const StyledList = styled.ul`
   margin: 0;
   padding: 0;
   cursor: initial;
-  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
 `;
 
 const StyledNavLink = styled(NavLink)`

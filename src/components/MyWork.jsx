@@ -13,7 +13,6 @@ const WorkSection = styled.section`
 
 const WorkSubtitle = styled.p`
   color: var(--clr-accent);
-  /* font-weight: var(--fw-bold); */
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-top: 10px;
   line-height: 1rem;

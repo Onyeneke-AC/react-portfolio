@@ -12,7 +12,6 @@ const StyledList = styled.ul`
   gap: 50px;
   align-items: center;
   list-style: none;
-  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
 `;
 
 const StyledNavLink = styled(NavLink)`
