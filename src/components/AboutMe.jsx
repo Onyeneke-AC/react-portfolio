@@ -36,9 +36,17 @@ const SeparateDiv = styled.div`
 `;
 
 const AboutImage = styled.img`
-  grid-area: img;
+  /* grid-area: img;
   position: relative;
-  z-index: 2;
+  z-index: 2; */
+  box-shadow: var(--bs);
+
+  @media (min-width: 600px) {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
 `;
 
 function AboutMe() {
@@ -58,7 +66,7 @@ function AboutMe() {
         </p>
       </TextDiv>
 
-      <AboutImage src="./img/me.jpeg" alt="Anthony Smiling" />
+      <AboutImage src="./img/eden-pic.jpg" alt="Anthony Smiling" />
 
       <SeparateDiv>
         <Heading as="h3">My Journey So Far </Heading>
