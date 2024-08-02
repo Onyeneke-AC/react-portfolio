@@ -36,9 +36,6 @@ const SeparateDiv = styled.div`
 `;
 
 const AboutImage = styled.img`
-  /* grid-area: img;
-  position: relative;
-  z-index: 2; */
   box-shadow: var(--bs);
 
   @media (min-width: 600px) {
