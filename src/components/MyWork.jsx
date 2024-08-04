@@ -46,7 +46,8 @@ function MyWork() {
     <WorkSection id="Work">
       <Heading as="my-work">My Work</Heading>
       <WorkSubtitle>
-        Over one year experience working with front-end technologies.
+        Over one year experience working with front-end technologies.{" "}
+        <strong>Click on image to view project details.</strong>
       </WorkSubtitle>
       <Portfolio>
         {portfolioData.map((work) => (
