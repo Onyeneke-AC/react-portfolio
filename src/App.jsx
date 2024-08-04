@@ -3,6 +3,7 @@ import AppLayout from "./components/AppLayout";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import "./index.css";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="home" element={<Home />} />
         </Route>
         <Route path="project/:projectId" element={<Project />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );
