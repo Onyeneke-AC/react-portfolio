@@ -15,7 +15,7 @@ const WorkSubtitle = styled.p`
   color: var(--clr-accent);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-top: 10px;
-  line-height: 1rem;
+  line-height: 1.5rem;
   font-size: 20px;
 `;
 
@@ -47,7 +47,7 @@ function MyWork() {
       <Heading as="my-work">My Work</Heading>
       <WorkSubtitle>
         Over one year experience working with front-end technologies.{" "}
-        <strong>Click on image to view project details.</strong>
+        <strong>Click image to view project details.</strong>
       </WorkSubtitle>
       <Portfolio>
         {portfolioData.map((work) => (
