@@ -141,7 +141,7 @@ function ProjectDetails() {
 
   return (
     <>
-      <BackLink onClick={() => navigate(-1)}>
+      <BackLink onClick={() => navigate("/")}>
         <HiArrowLeft />
         Back to Home
       </BackLink>
