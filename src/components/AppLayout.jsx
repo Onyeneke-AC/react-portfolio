@@ -2,6 +2,10 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import styled from "styled-components";
+import Introduction from "./Introduction";
+import MyServices from "./MyServices";
+import AboutMe from "./AboutMe";
+import MyWork from "./MyWork";
 
 const StyledMain = styled.main`
   display: flex;
@@ -14,7 +18,10 @@ function AppLayout() {
     <div>
       <Navbar />
       <StyledMain>
-        <Outlet />
+        <Introduction />
+        <MyServices />
+        <AboutMe />
+        <MyWork />
       </StyledMain>
       <Footer />
     </div>
