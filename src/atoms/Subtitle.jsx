@@ -40,6 +40,7 @@ const Subtitle = styled.p`
         left: -1em;
         width: calc(100% + 2em);
         padding-right: calc(200px + 4em);
+        align-content: center;
         padding-left: 1em;
       }
     `}
