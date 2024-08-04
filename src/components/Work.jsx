@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Image = styled.img`
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
-  width: 100%;
+  /* width: 100%; */
   height: 300px;
   object-fit: cover;
 

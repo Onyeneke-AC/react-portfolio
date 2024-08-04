@@ -8,6 +8,10 @@ const Subtitle = styled.p`
   padding: 0.25em 1em;
   margin-bottom: 1em;
 
+  @media screen and (max-width: 600px) {
+    margin-top: 3px;
+  }
+
   @media (min-width: 600px) {
     grid-column: -1/1;
     grid-row: 2;
@@ -31,6 +35,7 @@ const Subtitle = styled.p`
     props.type === "about-me" &&
     css`
       grid-area: subtitle;
+
       @media (min-width: 600px) {
         left: -1em;
         width: calc(100% + 2em);

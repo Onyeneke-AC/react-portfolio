@@ -5,7 +5,7 @@ import Heading from "../atoms/Heading";
 const StyledAboutMe = styled.section`
   max-width: 1000px;
   margin: 0 auto;
-  padding: 7em 5em;
+  padding: 60px 30px;
 
   @media (min-width: 600px) {
     padding: 7em 5em;
@@ -37,6 +37,8 @@ const SeparateDiv = styled.div`
 
 const AboutImage = styled.img`
   box-shadow: var(--bs);
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   @media (min-width: 600px) {
     grid-area: img;

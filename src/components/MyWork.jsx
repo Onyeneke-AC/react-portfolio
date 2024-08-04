@@ -8,7 +8,7 @@ const WorkSection = styled.section`
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 30px;
 `;
 
 const WorkSubtitle = styled.p`
@@ -21,14 +21,20 @@ const WorkSubtitle = styled.p`
 
 const Portfolio = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(inherit, 1fr));
   gap: 25px;
-  padding: 50px;
+  padding: 50px 0;
+  border: 1px solid red;
+
+  @media screen and (min-width: 500px) {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
 `;
 
 const PortfolioItem = styled(Link)`
   background: var(--clr-accent);
-  overflow: hidden;
+  border: 1px solid blue;
+  max-width: 100%;
 
   &:focus {
     position: relative;
