@@ -9,7 +9,7 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   font-weight: var(--fw-bold);
-  padding: 10px 50px;
+  padding: 10px 30px;
   position: sticky;
   top: 0;
   right: 0;
