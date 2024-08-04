@@ -24,7 +24,6 @@ const Portfolio = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(inherit, 1fr));
   gap: 25px;
   padding: 50px 0;
-  border: 1px solid red;
 
   @media screen and (min-width: 500px) {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -33,8 +32,8 @@ const Portfolio = styled.div`
 
 const PortfolioItem = styled(Link)`
   background: var(--clr-accent);
-  border: 1px solid blue;
-  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
 
   &:focus {
     position: relative;
