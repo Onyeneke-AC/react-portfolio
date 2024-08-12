@@ -58,7 +58,7 @@ function Footer() {
         </li>
         <li>
           <FooterLink
-            to="www.linkedin.com/in/anthony-onyeneke"
+            to="https://linkedin.com/in/anthony-onyeneke"
             target="__blank"
           >
             <FaLinkedin />
