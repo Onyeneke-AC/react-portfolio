@@ -19,8 +19,8 @@ function AppLayout() {
       <StyledMain>
         <Introduction />
         <MyServices />
-        <AboutMe />
         <MyWork />
+        <AboutMe />
       </StyledMain>
       <Footer />
     </div>
