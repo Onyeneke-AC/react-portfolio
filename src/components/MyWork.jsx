@@ -46,7 +46,7 @@ function MyWork() {
     <WorkSection id="Work">
       <Heading as="my-work">My Work</Heading>
       <WorkSubtitle>
-        Over one year experience working with front-end technologies.{" "}
+        Over 3 years experience working with front-end technologies.{" "}
         <strong>Click image to view project details.</strong>
       </WorkSubtitle>
       <Portfolio>
