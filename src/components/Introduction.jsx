@@ -35,10 +35,10 @@ function Introduction() {
   return (
     <StyledIntroduction id="Home">
       <Heading as="intro-heading">
-        Hi, I am <strong>Onyeneke Anthony</strong>
+        Hi, I am <strong>Igboabuchukwu Wisdom</strong>
       </Heading>
       <Subtitle type="intro-sub">Front-end Developer</Subtitle>
-      <IntroImage src="./img/me.jpeg" alt="Anthony smiling" />
+      <IntroImage src="./img/wiz-pic-1.jpg" alt="Anthony smiling" />
     </StyledIntroduction>
   );
 }

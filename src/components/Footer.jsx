@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+// import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -49,26 +50,24 @@ const FooterLink = styled(Link)`
 function Footer() {
   return (
     <StyledFooter>
-      <p>onyeneke.acs@gmail.com</p>
+      {/* <p>onyeneke.acs@gmail.com</p> */}
+      <p>wisdom_001@yahoo.com</p>
       <FooterList>
-        <li>
+        {/* <li>
           <FooterLink to="https://github.com/Onyeneke-AC" target="__blank">
             <FaGithub />
           </FooterLink>
-        </li>
+        </li> */}
         <li>
-          <FooterLink
-            to="https://linkedin.com/in/anthony-onyeneke"
-            target="__blank"
-          >
+          <FooterLink to="https://www.linkedin.com/in/wsdm/" target="__blank">
             <FaLinkedin />
           </FooterLink>
         </li>
-        <li>
+        {/* <li>
           <FooterLink to="https://x.com/anthony_egotech" target="__blank">
             <FaTwitter />
           </FooterLink>
-        </li>
+        </li> */}
       </FooterList>
     </StyledFooter>
   );

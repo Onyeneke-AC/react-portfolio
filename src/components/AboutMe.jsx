@@ -58,14 +58,14 @@ function AboutMe() {
 
       <TextDiv>
         <p>
-          👋 Hello! I’m Anthony, an enthusiastic and dedicated aspiring software
+          👋 Hello! I’m Wisdom, an enthusiastic and dedicated aspiring software
           engineer. With a solid foundation in front-end development and a
           growing interest in back-end technologies, I’m on a mission to create
           elegant, efficient, and user-friendly solutions.
         </p>
       </TextDiv>
 
-      <AboutImage src="./img/eden-pic.jpg" alt="Anthony Smiling" />
+      <AboutImage src="./img/wiz-pic-2.jpg" alt="Anthony Smiling" />
 
       <SeparateDiv>
         <Heading as="h3">My Journey So Far </Heading>
