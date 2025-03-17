@@ -190,14 +190,14 @@ function ProjectDetails() {
               to view the project
             </strong>
           </div>
-          {/* <div>
+          <div>
             <strong>
               Github Repository:{" "}
               <ProjectLink to={project.github} target="__blank">
                 Github
               </ProjectLink>
             </strong>
-          </div> */}
+          </div>
         </StyledLinks>
       </StyledPortfolioItem>
       <Footer />
